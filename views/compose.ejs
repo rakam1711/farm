@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+
+<form  action="/" method="post">
+  <div class="form-group">
+    <label>product type</label>
+    <select class="form-control" name="title">
+      <option value="">select</option>
+      <option value="">Rice</option>
+      <option value="">Wheat</option>
+      <option value="">Corn</option>
+      <option value="">sugar-cane</option>
+    </select>
+    <label>amount</label>
+    <input class="form-control" type="text" name="amount" >
+    <label>price</label>
+    <input class="form-control" type="text" name="price" >
+    <label>address</label>
+    <input class="form-control" type="text" name="address" >
+
+
+  </div>
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+
+</form>
+
+
+<%- include("partials/footer"); -%>

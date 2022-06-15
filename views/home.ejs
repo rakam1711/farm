@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+
+<img src="/images/home_img.gif" width="800" height="300" alt="">
+
+
+
+<p> <%= homest %> </p>
+
+
+    <% for (var i=0; i<publishData.length; i++){ %>
+
+    <div class="main">
+        <img id="img1" src="./ggehun1.jpg" alt="">
+        <h1 id="W1" ><%= publishData[i].title %></h1>
+        <p id="kg" ><%= publishData[i].amount %></p>
+        <p id="loc" ><%= publishData[i].price %></p>
+        <p id="Rs" ><%= publishData[i].address %></p>
+    </div>
+      <% } %>
+
+<%- include("partials/footer"); -%>
